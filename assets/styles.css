@@ -30,7 +30,8 @@
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 100px;
+    gap: 20px;
+    align-items: center;
 }
 
 .navbar i {
@@ -50,7 +51,7 @@
     height: 60px;
     background-color: black;
     border-radius: 40px;
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navbar-link {
@@ -148,15 +149,15 @@ main {
 
 #contact {
     display: flex;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(111, 105, 220) 0%, rgb(201, 233, 143) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(16, 255, 0);
+    background: linear-gradient(90deg, rgba(16, 255, 0, 0.46450455182072825) 0%, rgba(45, 207, 215, 0) 48%, rgba(0, 212, 255, 0.430891106442577) 100%);
     border-radius: 20px;
     padding: 30px;
     text-align: center;
     justify-content: center;
 }
 
-.register {
+.pedir {
     display: flex;
     width: 200px;
     margin: auto;
@@ -166,50 +167,10 @@ main {
     justify-content: center;
 }
 
-.registerex {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(76, 1, 147);
-    border-radius: 20px;
-}
-
-.registerex2 {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(76, 1, 147);
-    border-radius: 20px;
-}
-
-.registerex3 {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(76, 1, 147);
-    border-radius: 20px;
-}
-
-.registerex4 {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(76, 1, 147);
-    border-radius: 20px;
-}
-
-.botones {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(76, 1, 147);
-    margin-top: 10px;
-}
-
 .primer-btn {
     text-decoration: none;
-    color: black;
-    background-color: gray;
+    color: white;
+    background-color: #252525;
     padding: 10px 10px;
     border-radius: 10px;
     margin-top: 10px;
@@ -218,8 +179,8 @@ main {
 
 .segundo-btn {
     text-decoration: none;
-    color: black;
-    background-color: gray;
+    color: white;
+    background-color: #252525;
     padding: 10px 10px;
     border-radius: 10px;
     margin-top: 10px;
@@ -376,8 +337,12 @@ footer {
     border-radius: 40px;
     color: black;
     margin: 8%;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.8);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
     text-align: center;
+}
+
+footer img {
+    width: 40px;
 }
 
 .bottom-card {
@@ -405,7 +370,7 @@ footer {
 }
 
 .bottom-img {
-    height: 500px;
+    height: 450px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.397) 0px 8px 24px;
     margin-top: 50px;

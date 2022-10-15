@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles.css">
-    <title>In-100-sar</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/png" href="./assets/favicon-16x16.png">
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="icon" type="image/png" href="./assets/favicon-16x16.png">
+    <title>In-100-sar</title>
 </head>
 
 <body>
@@ -26,7 +25,7 @@
                 <li><a class="navbar-link" href="#hero">INICIO</a></li>
                 <li><a class="navbar-link" href="#about">INFO</a></li>
                 <li><a class="navbar-link" href="#contact">CONTACTO</a></li>
-                <li><a class="navbar-link" href="./register.html" target="_blank">Loguearme</a></li>
+                <li><a class="navbar-link" href="register.html" target="_blank">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -86,53 +85,52 @@
             <div class="bottom-card">
                 <div>
                     <h2>Encarganos tu pedido</h2>
-                    <form action="form">
+                    <form>
                         <div>
                             <label for="nombre">Nombre:</label>
-                            <input class="register" type="text" id="nombre" required placeholder="Ingresa tu nombre" />
+                            <input class="pedir" type="text" id="nombre" required placeholder="Ingresa tu nombre" />
                         </div>
 
                         <div>
                             <label for="apellido">Apellido:</label>
-                            <input class="register" type="text" id="apellido" required
-                                placeholder="Ingresa tu apellido" />
+                            <input class="pedir" type="text" id="apellido" required placeholder="Ingresa tu apellido" />
                         </div>
 
                         <div>
                             <label for="Correo">Dirección:</label>
-                            <input class="register" type="text" id="Calle" required placeholder="Calle 123" />
+                            <input class="pedir" type="text" id="Correo" required placeholder="Calle 123" />
                         </div>
 
                         <div>
                             <label for="informacion">Deseo recibir información sobre nuevas promociones.</label>
-                            <input class="register" type="checkbox" id="informacion">
+                            <input class="pedir" type="checkbox" id="informacion">
                         </div>
 
                         <div>
                             <label for="informacion">Declaro que leí los terminos y condiciones.</label>
-                            <input class="register" type="checkbox" id="informacion">
+                            <input class="pedir" type="checkbox" id="informacion">
                         </div>
 
                         <div>
-                            <input class="boton" type="submit" value="Pedir">
+                            <input class="boton" type="submit" value="Encargar pedido">
                         </div>
                     </form>
                 </div>
             </div>
         </section>
         <a href="https://www.google.com/maps/place/Regi%C3%B3n+de+Kant%C5%8D,+Tokio,+Jap%C3%B3n/@36.0235208,138.5166687,8z/data=!3m1!4b1!4m5!3m4!1s0x6018b60012220e6f:0x69d63b267e399f89!8m2!3d36.4598667!4d139.6911374"
-        target="_blank" class="primer-btn">Ubicación</a>
-    <a href="https://www.instagram.com/sagradamadre.cordoba/?hl=es" target="_blank"
-        class="segundo-btn">Equipo</a>
+            target="_blank" class="primer-btn">Ubicame</a>
+        <a href="https://www.instagram.com/sagradamadre.cordoba/?hl=es" target="_blank" class="segundo-btn">Equipo</a>
         <img src="./assets/vivero.jpg" alt="vivero" class="bottom-img" />
     </main>
 
-    <footer>
-        <div class="footer">
-            <p>&copy;Vivero 2022</p>
+    <div class="footer">
+        <footer>
+            <p>&copy;Vivero 2022 - Provincia de Córdoba</p>
             <p>Teléfono +12 34 5678 9101</p>
-        </div>
-    </footer>
+            <img src="./assets/logowhats.png" alt="whatsapp">
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overlock', cursive;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background: #f2709c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9472, #f2709c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #494949;
+    text-decoration:underline rgb(160, 230, 255);
+}
+
+form {
+    background: #ffffff;
+    padding: 60px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+    background: #ece7e7;
+    border-radius: 10px;
+}
+
+input {
+    background: none;
+    color: #f2709c;
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    border: none;
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid;
+}
+
+input:focus {
+    outline: none;
+    color: #ffa3d1;
+}
+
+label {
+    color: #f2709c;
+    font-size: 20px;
+    position: absolute;
+    border: 10px;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    font-size: 15px;
+    color: rgb(225, 33, 33);
+    font-weight: 600;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+
+.barra::before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    background: linear-gradient(to right, #ff9472, #f2709c);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 100%;
+}
+
+button {
+font-family: 'Overlock', cursive;
+background: #f2709c;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff9472, #f50957);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ea5123, #e80752);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: none;
+width: 80%;
+margin: 20px auto;
+color: #ece7e7;
+width: 200px;
+border-radius: 10px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+}
+
+@media screen and (max-width: 500px){
+    .form {
+        width: 80%;
+    }
+}

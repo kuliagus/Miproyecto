@@ -5,35 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/register.css">
+    <title>Iniciá Sesión</title>
 </head>
 
 <body>
-    <section>
-        <form action="./login.html" method="post">
-            <h1>Registrate</h1>
-            <div class="contenedor">
-
-                <div>
-                    <input type="text" placeholder="Nombre completo">
-                </div>
-
-                <div>
-                    <input type="email" placeholder="Correo Electronico">
-                </div>
-
-                <div>
-                    <input type="password" placeholder="Contraseña">
-                </div>
-                <input type="submit" value="Listo">
-                <a href="./login.html"></a>
-                <p>Al registrarte aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-                <p>Ya tengo cuenta <a href="">Iniciar Sesión</a></p>
-
+    <form id="form">
+        <div class="form">
+            <h1>Iniciá Sesión</h1>
+            <div class="grupo">
+                <input type="text" name="#" id="name" required><span class="barra"></span>
+                <label for="#">Nombre</label>
             </div>
-        </form>
-    </section>
+
+            <div class="grupo">
+                <input type="email" name="#" id="name" required><span class="barra"></span>
+                <label for="#">Correo</label>
+            </div>
+
+            <div class="grupo">
+                <input type="password" name="#" id="name" required><span class="barra"></span>
+                <label for="#">Contraseña</label>
+            </div>
+        </div>
+    </form>
+
+    <a href="index.html"><button>
+            <p> L I S T O </p>
+        </button></a>
+
+    <a href="login.html"><button>
+            <p>Crear cuenta nueva </p>
+        </button></a>
 
 
 </body>
